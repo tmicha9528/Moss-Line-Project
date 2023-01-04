@@ -10,7 +10,7 @@ public class LineMovement : MonoBehaviour
 {
     public GameObject ball;
     public GameObject ball_line;
-    float ballXPosition = 0;
+    public GameObject back_line;
 
     // Start is called before the first frame update
     void Start()
