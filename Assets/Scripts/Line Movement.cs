@@ -51,7 +51,8 @@ public class LineMovement : MonoBehaviour
         var ballXPosition = ball.transform.localPosition.x;
         print(ballXPosition);
         float mossFormulaForBackLinePosX = ballXPosition * 0.085f + 85.8f;
-        float backLineAdjustedForFieldPerspective = mossFormulaForBackLinePosX - 105f;
+        float backLineAdjustedForFieldPerspective = mossFormulaForBackLinePosX - 52.5f;
         back_line.transform.position = new Vector3(backLineAdjustedForFieldPerspective, back_line.transform.position.y, back_line.transform.position.z);
+        ball_line.transform.position = new Vector3(ballXPosition - 52.5f, ball_line.transform.position.y, ball_line.transform.position.z);
     }
 }
